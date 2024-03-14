@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Stop Playing With Your Phone",
   "description": "Block distracting website to stay focused.",
-  "permissions": ["storage", "declarativeNetRequest", "declarativeNetRequestFeedback", "scripting", "activeTab"],
+  "permissions": ["tabs", "storage", "declarativeNetRequest", "declarativeNetRequestFeedback", "scripting", "activeTab"],
   "version": "1.0",
   "icons": {
     "16": "images/icon-16.png",
