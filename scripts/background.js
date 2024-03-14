@@ -26,7 +26,7 @@ function addUserBlockedUrl(url) {
   });
 }
 
-function isfocusModeOn() {}
+// function isfocusModeOn() {}
 
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
   if (message.action === 'addBlockSite') {
@@ -34,7 +34,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     console.log(`${message.url} added to block list.`);
     sendResponse({ success: true });
   } else if (message.action === 'toggleFocusMode') {
-    let focusModeOn = !isFocusModeOn();
+    // let focusModeOn = !isFocusModeOn();
     console.log('Toggling focus mode is not a feature');
     sendResponse({ success: true, focusModeOn: focusModeOn });
   }
